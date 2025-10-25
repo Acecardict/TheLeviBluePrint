@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mandatory: Ensure full responsiveness on mobile devices --><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Levi Blueprint: Freelance Brand Scaling</title>
+    <!-- Load Tailwind CSS from CDN for professional, responsive styling --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for course element visuals --><script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom config for dark, professional theme */
+        :root {
+            --color-primary: #10b981; /* Emerald 500 */
+            --color-secondary: #fcd34d; /* Amber 300 */
+            --color-background: #0f172a; /* Slate 900 */
+            --color-card: #1e293b; /* Slate 800 */
+            --color-text: #f1f5f9; /* Slate 100 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            min-height: 100vh;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+        .module-header {
+            /* Use a button-like appearance for accessibility and visual cue */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            user-select: none; /* Prevent text selection on tap */
+        }
+        .module-header:hover {
+            background-color: #334155; /* Slate 700 */
+        }
+        /* Style for initially collapsed state (base) */
+        .collapsed-content {
+            max-height: 0;
+            overflow: hidden;
+            /* Smoother transition for better mobile feel */
+            transition: max-height 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+        }
+        /* Style for expanded state */
+        .expanded-content {
+            max-height: 5000px; /* Large enough to cover all content */
+        }
+        .data-point-icon {
+            color: var(--color-primary);
+        }
+        /* Enforce mobile-first padding and readability */
+        .module-content-inner {
+            border-top: 1px solid #334155;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+        }
+        @media (min-width: 640px) {
+            .module-content-inner {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+        /* Styling for the image containers */
+        .diagram-container {
+            margin-top: 1.5rem; /* Space above diagram */
+            margin-bottom: 1rem; /* Space below diagram */
+        }
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem; /* Rounded corners for images */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app" class="max-w-4xl mx-auto px-4">
+
+        <!-- COURSE HEADER --><header class="text-center mb-12 py-8 bg-slate-800 rounded-xl shadow-2xl shadow-emerald-900/50">
+            <span class="text-xs font-semibold uppercase tracking-widest text-emerald-400">The 6-Figure Freelance System</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold mt-2 leading-tight">The Levi Blueprint</h1>
+            <p class="text-lg sm:text-xl text-slate-400 mt-1">The Complete System for Making Money as a Freelance Brand Scaler.</p>
+        </header>
+
+        <!-- PART 1: INTRODUCTION --><section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-emerald-500 pb-2 text-emerald-300">PART 1: THE BLUEPRINT - "FROM FREELANCER TO CEO"</h2>
+
+            <!-- My Story --><div class="bg-slate-800 p-6 rounded-lg shadow-xl mb-6 border border-slate-700">
+                <h3 class="text-2xl font-semibold mb-3 text-slate-100 flex items-center">
+                    <i data-lucide="gem" class="w-6 h-6 mr-3 text-yellow-300"></i> My Transition: Selling My System, Not My Time
+                </h3>
+                <blockquote class="border-l-4 border-yellow-300 pl-4 italic text-slate-300 text-lg">
+                    "I was running successful ads, but trading hours for dollars. The real financial leap came when I stopped being a contractor and started being an **asset**. My core philosophy is simple: **You sell the system (The Levi Method), you keep the profit margin.** This course is about making that jump and giving you **everything you need to make consistent money** as a freelance brand scaler."
+                </blockquote>
+                <div class="mt-4 p-4 bg-slate-700 rounded-md">
+                    <h4 class="text-xl font-semibold mb-2 text-emerald-400">High-Ticket Case Study: Closing Zenith Tech</h4>
+                    <p class="text-sm text-slate-300">How I Closed a **$5,000/Month Retainer in 7 Days** Using Only Organic Outreach.</p>
+                    <ul class="list-disc list-inside text-sm mt-2 space-y-1 pl-4">
+                        <li>**The Offer:** Performance guarantee, not just ad management.</li>
+                        <li>**The Proposal:** Showed 3 weaknesses in their current ads, proposed **The Levi Method**.</li>
+                        <li>**The Result:** $60k/year contract signed. **90% profit margin** after outsourcing execution to a VA.</li>
+                        <li>**Core Philosophy:** "The less you work in the business, the more you can work *on* the business."</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Who This Course Is For --><div class="bg-slate-800 p-6 rounded-lg shadow-xl border border-slate-700">
+                <h3 class="text-2xl font-semibold mb-3 text-slate-100 flex items-center">
+                    <i data-lucide="users" class="w-6 h-6 mr-3 text-emerald-400"></i> Who This Course Is For
+                </h3>
+                <p class="text-slate-300">Experienced marketers and freelancers ready to leave behind low-paying gigs and establish a **high-ticket, retainer-based SMMA** selling repeatable, proven scaling services.</p>
+            </div>
+        </section>
+
+
+        <!-- PART 2: CORE CURRICULUM --><section id="core-curriculum">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-emerald-500 pb-2 text-emerald-300">PART 2: THE CORE CURRICULUM - "THE LEVI SYSTEM"</h2>
+
+            <!-- Modules Container --><div id="modules-container" class="space-y-4">
+                <!-- Modules will be rendered here by JavaScript --></div>
+        </section>
+
+    </div>
+
+    <script>
+        // Data for all course modules
+        const modulesData = [
+            {
+                id: 1,
+                title: "The Irresistible Offer",
+                subtitle: "Niching down and defining a service clients cannot refuse.",
+                icon: "sparkles",
+                content: `
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3">A. Conceptual Explanation: Niching for Riches</h4>
+                    <p class="text-slate-300 mb-4">You can't be everything to everyone. Your unique selling proposition (USP) must target a specific, affluent niche (e.g., luxury travel, high-end SaaS). This allows you to charge premium prices and build highly efficient systems. The offer must solve one massive pain point.</p>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">B. Data & Metrics: Structuring Retainers</h4>
+                    <ul class="space-y-2 text-sm pl-4">
+                        <li class="flex items-center"><i data-lucide="shield" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Offer Type:</strong> High-ticket clients prefer **Performance-Based Retainers** ($X/month + % of ad spend or revenue). Avoid flat hourly rates entirely.</li>
+                        <li class="flex items-center"><i data-lucide="trending-up" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Target Retainer Rate:</strong> Never start below **$3,000/month**. The goal should be $5,000 - $10,000/month.</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Client Lifetime Value (LTV):</strong> Aim for a minimum client LTV of **$18,000** (a 6-month contract at $3k/mo).</li>
+                    </ul>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">C. Diagrams & Visuals</h4>
+                    <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 diagram-container">
+                        <img src="IMG_1370.jpeg">
+                        <p class="text-xs text-center text-slate-400 mt-2"><strong>: "The Niche Selection Funnel."</strong> A vertical funnel starting with **Broad Market** &rarr; **Industry (E-commerce)** &rarr; **Vertical (Skincare)** &rarr; **Niche (Luxury, Organic Skincare)**. Showing how specializing leads to higher pricing power.</p>
+                    </div>
+                `
+            },
+            {
+                id: 2,
+                title: "Client Acquisition Engine",
+                subtitle: "Building a scalable outreach machine that generates qualified leads.",
+                icon: "inbox",
+                content: `
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3">A. Conceptual Explanation: Organic Authority</h4>
+                    <p class="text-slate-300 mb-4">High-ticket clients aren't found on Fiverr. We focus on **organic authority channels**&mdash;personalized cold outreach (email/LinkedIn) and leveraging referrals. Your outreach should not ask for a job; it should offer a specific, quantifiable solution based on their current problems.</p>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">B. Data & Metrics: Outreach KPIs</h4>
+                    <ul class="space-y-2 text-sm pl-4">
+                        <li class="flex items-center"><i data-lucide="mail-open" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Cold Email Success:</strong> Target an **Open Rate of >40%** and a **Reply Rate of >5%**. Volume matters, but quality of personalization matters more.</li>
+                        <li class="flex items-center"><i data-lucide="phone-call" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Appointment Set Rate:</strong> Aim for **1 appointment per 50 targeted emails**.</li>
+                        <li class="flex items-center"><i data-lucide="zap" class="w-4 h-4 mr-2 data-point-icon"></i><strong>LTV/CAC Ratio:</strong> Your Client Lifetime Value must be at least **10x** your Client Acquisition Cost (time, tools, and effort).</li>
+                    </ul>
+                    
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">C. Diagrams & Visuals</h4>
+                    <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 diagram-container">
+                        <img src="IMG_1371.jpeg" class="w-full h-auto object-cover">
+                        <p class="text-xs text-center text-slate-400 mt-2"><strong>"The 3-Step Outreach System."</strong> A linear flow: **1. Hyper-Personalization** (Find weakness/opportunity) &rarr; **2. Short, Punchy Message** (Present the finding and offer The Levi Method) &rarr; **3. Low-Friction CTA** (Suggest a 15-minute diagnostic call, not a pitch).</p>
+                    </div>
+                `
+            },
+            {
+                id: 3,
+                title: "The High-Ticket Close",
+                subtitle: "Mastering the discovery and proposal calls to secure the retainer.",
+                icon: "lock",
+                content: `
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3">A. Conceptual Explanation: Selling the System</h4>
+                    <p class="text-slate-300 mb-4">You are not selling hours. You are selling **certainty** and access to a **proprietary system (The Levi Method)**. The two-call close is mandatory: **Call 1 (Discovery):** Diagnose pain. **Call 2 (Proposal):** Prescribe the solution, anchor the high price, and handle objections with confidence.</p>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">B. Data & Metrics: Closing Performance</h4>
+                    <ul class="space-y-2 text-sm pl-4">
+                        <li class="flex items-center"><i data-lucide="target" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Close Rate Goal:</strong> Target a **20%** close rate on qualified proposals. If lower, refine your Discovery Call qualification process.</li>
+                        <li class="flex items-center"><i data-lucide="file-text" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Commitment Length:</strong> Never accept less than a **3-month contract**. Push for 6 or 12 to ensure time for results and reduce churn.</li>
+                        <li class="flex items-center"><i data-lucide="message-square" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Top Objection & Response:</strong> "It's too expensive" &rarr; *Focus on the cost of their current failed ad strategy, not your price. Frame your fee as an investment with guaranteed ROI.*</li>
+                    </ul>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">C. Diagrams & Visuals</h4>
+                    <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 diagram-container">
+                        <img src="IMG_1372.jpeg" class="w-full h-auto object-cover">
+                        <p class="text-xs text-center text-slate-400 mt-2"><strong>"The 4-Stage Closing Script Flowchart."</strong> Stages: **1. Rapport & Qualification** &rarr; **2. Pain & Goal Definition** &rarr; **3. Solution Prescription** (The Levi Method) &rarr; **4. Price Anchoring & Commitment** (High-Ticket Close). Showing decision points and required outputs at each stage.</p>
+                    </div>
+                `
+            },
+            {
+                id: 4,
+                title: "Systematized Service Delivery",
+                subtitle: "Removing yourself from the execution to protect your time.",
+                icon: "cog",
+                content: `
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3">A. Conceptual Explanation: SOPs Over Time</h4>
+                    <p class="text-slate-300 mb-4">The agency model only works if the service is delivered by a standardized **Standard Operating Procedure (SOP)**, not by you. The "Levi Method" is your SOP. You hire affordable talent (VAs/Junior Media Buyers) to execute the system, freeing you up for sales and strategy.</p>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">B. Data & Metrics: Profit and Delegation</h4>
+                    <ul class="space-y-2 text-sm pl-4">
+                        <li class="flex items-center"><i data-lucide="percent" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Profit Margin Target:</strong> Aim for a minimum **60% profit margin** per client after paying VAs/contractors (e.g., $5k retainer &rarr; $2k for execution &rarr; $3k profit).</li>
+                        <li class="flex items-center"><i data-lucide="refresh-cw" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Reporting Frequency:</strong> Never report daily. Only **Weekly (metrics)** and **Monthly (strategy)**. This prevents micromanagement and saves hours.</li>
+                        <li class="flex items-center"><i data-lucide="briefcase" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Outsourcing Cost:</strong> A high-quality media buyer/VA costs **$800 - $1,500/month**. This is scalable.</li>
+                    </ul>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">C. Diagrams & Visuals</h4>
+                    <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 diagram-container">
+                        <img src="IMG_1373.jpeg" class="w-full h-auto object-cover">
+                        <p class="text-xs text-center text-slate-400 mt-2"><strong>"The Client Onboarding and Reporting System."</strong> A process map: **Client Closed** &rarr; **SOP Triggered** &rarr; **VA executes The Levi Method** &rarr; **Weekly Automated Report Sent** &rarr; **CEO (You) reviews Metrics**. Showing where automation and delegation occur.</p>
+                    </div>
+                `
+            },
+            {
+                id: 5,
+                title: "Scaling the Agency",
+                subtitle: "Moving from 3 clients to 10+ clients and hiring your first employee.",
+                icon: "rocket",
+                content: `
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3">A. Conceptual Explanation: Building a Machine</h4>
+                    <p class="text-slate-300 mb-4">Scaling the agency means building an internal sales and fulfillment team. Your next critical hire is often a Sales Rep or a dedicated Client Manager. This move allows you to delegate the closing process, shifting your role to pure company direction and financial oversight.</p>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">B. Data & Metrics: Team Expansion</h4>
+                    <ul class="space-y-2 text-sm pl-4">
+                        <li class="flex items-center"><i data-lucide="user-plus" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Break-Even Point for Hire:</strong> Only hire a full-time employee (salary, benefits) when the added capacity (new clients) generates **3x** their total cost.</li>
+                        <li class="flex items-center"><i data-lucide="bar-chart-2" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Client Churn Rate:</strong> Aim to keep client churn below **5% monthly**. High churn means your core service (The Levi Method) is failing or your reporting is poor.</li>
+                        <li class="flex items-center"><i data-lucide="repeat" class="w-4 h-4 mr-2 data-point-icon"></i><strong>Reinvestment Rule:</strong> Reinvest **30%** of net profit back into lead generation systems (tools, hiring sales help, paid ads for your own agency).</li>
+                    </ul>
+
+                    <h4 class="text-xl font-semibold text-emerald-400 mb-3 mt-5">C. Diagrams & Visuals</h4>
+                    <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 diagram-container">
+                        <img src="IMG_1377.jpeg
+                        " class="w-full h-auto object-cover">
+                        <p class="text-xs text-center text-slate-400 mt-2"><strong>"The Agency Scaling Ladder."</strong> A tiered diagram showing growth stages: **Level 1: Freelancer** (You do everything) &rarr; **Level 2: Boutique** (You sell, VAs fulfill) &rarr; **Level 3: Agency** (Sales team closes, Team fulfills, You oversee strategy and finance).</p>
+                    </div>
+                `
+            },
+        ];
+
+        // Function to render a single module
+        const renderModule = (module) => {
+            const iconHtml = `<i data-lucide="${module.icon}" class="w-6 h-6 mr-3 text-emerald-500"></i>`;
+            
+            // Render the first module open by default for a good first impression, others collapsed
+            const isFirstModule = module.id === 1;
+            const contentClass = isFirstModule ? 'expanded-content' : '';
+            const iconClass = isFirstModule ? 'rotate-180' : '';
+            const ariaExpanded = isFirstModule ? 'true' : 'false';
+
+            return `
+                <div id="module-${module.id}" class="bg-slate-800 rounded-xl shadow-xl overflow-hidden border border-slate-700 ${isFirstModule ? 'border-emerald-500' : ''}">
+                    <div role="button" tabindex="0" 
+                         aria-controls="content-${module.id}" 
+                         aria-expanded="${ariaExpanded}"
+                         class="module-header p-5 flex justify-between items-center transition-all duration-300" 
+                         onclick="toggleModule(${module.id})" 
+                         onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleModule(${module.id}); }">
+                        <h3 class="text-xl font-semibold flex items-center">
+                            ${iconHtml}
+                            <span class="text-yellow-300 mr-2 text-base sm:text-xl">MODULE ${module.id}:</span>
+                            <span class="text-slate-100 text-base sm:text-xl">${module.title}</span>
+                        </h3>
+                        <i data-lucide="chevron-down" id="icon-${module.id}" class="w-6 h-6 text-slate-400 transition-transform duration-300 ${iconClass}"></i>
+                    </div>
+                    <!-- Content starts collapsed by default (unless it's the first module) --><div id="content-${module.id}" class="collapsed-content ${contentClass} p-5 pt-0">
+                        <div class="module-content-inner">
+                            ${module.content}
+                        </div>
+                    </div>
+                </div>
+            `;
+        };
+
+        /**
+         * Toggles the visibility of a course module, updates ARIA attributes, and rotates the icon.
+         */
+        window.toggleModule = (id) => {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            const header = content.previousElementSibling;
+            const card = document.getElementById(`module-${id}`);
+
+            const isExpanded = content.classList.toggle('expanded-content');
+            
+            icon.classList.toggle('rotate-180');
+            card.classList.toggle('border-emerald-500');
+
+            // Update ARIA attributes for accessibility
+            header.setAttribute('aria-expanded', isExpanded);
+        };
+
+        // Main function to initialize the application
+        const initApp = () => {
+            const container = document.getElementById('modules-container');
+            if (container) {
+                // Render all modules
+                container.innerHTML = modulesData.map(renderModule).join('');
+                
+                // Manually initialize Lucide icons after content is loaded
+                // Wait briefly for the DOM to update
+                setTimeout(() => {
+                    if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                        lucide.createIcons();
+                    }
+                }, 0);
+            }
+        };
+
+        // Initialize the app on page load
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html> 
